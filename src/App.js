@@ -16,14 +16,14 @@ useEffect(() => {
   
   return (
     <div className="App">
-      {JSON.stringify(values.data.data.cars)}
-      {values.data.data.cars.map((c) => (
+      {JSON.stringify(values.data.cars)}
+      {values.data.cars.map((c) => (
         <div key={c.id}>
-          <p>Mark: {c.mark}</p>
+          <p>Mark: {c.car_mark}</p>
           <p>Type: {c.car_type}</p>
-          <p>Model: {c.model}</p>
+          <p>Model: {c.car_model}</p>
         </div>
-      ))}
+      ))} 
     </div>
   );
 }
